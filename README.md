@@ -1,5 +1,5 @@
 # 💻 Smart bearing condition monitoring service
-phm-2012dataset을 통해 학습한 인공지능 모델로 베어링 열화 모니터링 서비스를 구현 및 스마트 팩토리 시스템 구현 프로젝트
+A smart factory system project implementing a bearing degradation monitoring service using an AI model trained on the PHM-2012 dataset.
 <div >
 <img width="1000" alt="스크린샷 2023-08-23 오전 3 53 04" src="https://github.com/SWTeam2/learning_infer/assets/139730231/2a3e5652-f73e-4970-b68d-8a74131a5ce1">
 <div/>
@@ -7,26 +7,25 @@ phm-2012dataset을 통해 학습한 인공지능 모델로 베어링 열화 모�
 
 ## 💡 Project Introduce
 - 2023.07.26 - 2023.08.23
-- 스마트 팩토리 시스템 환경에서의 이상 탐지와 RUL 예측 서비스는 산업 분야에 혁명적인 변화를 가져오고 있습니다. 기계의 고장은 생산 라인 중단과 비용 증가로 이어질 수 있기 때문에, 기계의 상태를 모니터링하고
-  조기에 이상을 감지하며 필요한 유지보수를 수행하는 것이 매우 중요합니다. 이를 통해 생산성을 향상시키고 비용을 절감할 수 있습니다.
+- Anomaly detection and Remaining Useful Life (RUL) prediction services in a smart factory environment bring revolutionary changes to the industrial field. Since equipment failure can lead to production line shutdowns and increased costs, it is crucial to monitor machine conditions, detect anomalies at an early stage, and perform necessary maintenance. This not only enhances productivity but also reduces operational costs.
   <br><br>
  
-## 🧞‍♂️ Service
-+ 대시보드 서비스
+## 🧞‍♂️ Service Features
++ Dashboard Service
 ![대시보드 서비스 시연영상](
 https://github.com/K-Software-BootCamp/2023KEB_SKII/assets/76683835/a2d6f7cc-a236-45e5-bfcd-93b501b6403a
 )
 
-+ 회원 관리 화면
++ User Management Interface
 ![회원관리 시연영상](
-https://github.com/K-Software-BootCamp/2023KEB_SKII/assets/76683835/c5b92833-71ae-42db-9722-c50fcc8dcb32
-)
+https://github.com/K-Software-BootCamp/2023KEB_SKII/assets/76683835/c5b92833-71ae-42db-9722-c50fcc8dcb32)
 
-- 센서 데이터의 실시간 수집과 모델의 예측 결과를 효과적으로 연동하는 시스템을 구현
+- Implemented a system that integrates real-time sensor data collection with prediction results from the AI model.
+  
+- Built a predictive service using a CNN-LSTM hybrid model to identify patterns between bearing condition changes and remaining useful life.
+  
+- Developed a deployable service framework that goes beyond research, providing practical tools for managing component life cycles and improving safety in real-world industrial applications.
 
-- CNN-LSTM 기법모델을 활용하여 Bearing의 상태 변화와 남은 수명 간의 패턴을 식별하고  예측하는 모델서비스을 구축 
- 
-- 연구에 그치는 것이 아닌 현업에서 부품의 수명 주기 관리 및 안전성 향상을 위한 중요한 도구로 활용 가능한 서비스 개발 틀 배포
 <br><br>
 
 ## 📋 MSA structure
@@ -41,13 +40,13 @@ https://github.com/K-Software-BootCamp/2023KEB_SKII/assets/76683835/c5b92833-71a
 
 ## 📁 Directories
 1. [Data_preprocessing](https://github.com/SWTeam2/Data_preprocessing)
-    - 데이터셋의 증강 및 전처리 과정
+    - Data augmentation and preprocessing steps
 2. [DB_server](https://github.com/SWTeam2/DB_server)
-    - DB 서버 구현 및 API 통신 
+    - Database server implementation and API communication 
 3. [modeling_inferServer](https://github.com/SWTeam2/learning_infer)
-    - Neural network modeling 및 최적화, prediction 기능을 하는 서버 구축
+    - Neural network modeling, optimization, and inference server implementation
 5. [web_service](https://github.com/SWTeam2/SmartBearing)
-   - Web 서비스에 필요한 서버 및 프론트 구현
+   - Backend and frontend implementation for the web service
 <br><br>
 
 ## 🤖 Model
@@ -112,7 +111,7 @@ https://github.com/K-Software-BootCamp/2023KEB_SKII/assets/76683835/c5b92833-71a
 
 ## 👥 Member
 
-|                                                        박성부                                                        |                                      김찬영                                       |                                                        최병훈                                                        |
+|                                                        Sungboo Park                                                        |                                      김찬영                                       |                                                        최병훈                                                        |
 |:-----------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------:|
 | <img width="200" src="https://github.com/chy0503/chy0503/assets/90389517/eac504ea-b35c-4a12-8775-0b3270eeb51f" /> | <img width="200" src="https://github.com/K-Software-BootCamp/2023KEB_SKII/assets/139730231/7658b916-1bba-4d9d-b457-3ef09cec8e4e" /> | <img width="200" src="https://github.com/chy0503/chy0503/assets/90389517/37be928a-cc07-46f8-a07b-6ce2de625b90" /> |
 |                                   Team Leader<br/>Modeling<br/>Data Engineering                                   |                                    Modeling                                    |                                                     Modeling                                                      |
@@ -134,5 +133,4 @@ https://github.com/K-Software-BootCamp/2023KEB_SKII/assets/76683835/c5b92833-71a
 
 ## Acknowledgement
 ```
-“본 연구는 과학기술정보통신부 및 정보통신기획평가원의 SW전문인재양성사업의 연구결과로 수행되었음“(2022-0-01127)
-```
+“This work was carried out as part of the SW Professional Talent Development Project funded by the Ministry of Science and ICT (MSIT) and the Institute of Information & Communications Technology Planning & Evaluation (IITP) (2022-0-01127).”```
