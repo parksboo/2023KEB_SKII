@@ -28,11 +28,6 @@ https://github.com/K-Software-BootCamp/2023KEB_SKII/assets/76683835/c5b92833-71a
 
 <br><br>
 
-## 📋 MSA structure
-
-![MSA](https://github.com/K-Software-BootCamp/2023KEB_SKII/assets/127288729/07759fc0-bd4b-4831-9520-e05a55279c4f)
-<br><br>
-
 ## 📄 Project Docs
 - [Notion Link](https://www.notion.so/choheeyeon/SK2-Smart-Bearing-af1f4c8346c049489b396224684dd3f5)
 - [GitHub Organization](https://github.com/SWTeam2)
