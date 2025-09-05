@@ -1,4 +1,4 @@
-# 💻 Smart bearing condition monitoring service
+# 💻 Smart bearing condition monitoring service (Eng)
 A smart factory system project implementing a bearing degradation monitoring service using an AI model trained on the PHM-2012 dataset.
 <div >
 <img width="1000" alt="스크린샷 2023-08-23 오전 3 53 04" src="https://github.com/SWTeam2/learning_infer/assets/139730231/2a3e5652-f73e-4970-b68d-8a74131a5ce1">
